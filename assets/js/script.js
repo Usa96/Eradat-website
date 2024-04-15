@@ -781,3 +781,24 @@
         }
     });
 });
+
+const firebaseConfig = {
+	apiKey: "AIzaSyDCCuI8EG99GX1_klITPi8eov_5IIYQIFo",
+	authDomain: "luminus-95420.firebaseapp.com",
+	projectId: "luminus-95420",
+	storageBucket: "luminus-95420.appspot.com",
+	messagingSenderId: "668493549083",
+	appId: "1:668493549083:web:bb62d3af928a9ea53272be",
+	measurementId: "G-4NM3T9XPVX"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  if (typeof firebase !== 'undefined') {
+    console.log('Firebase is initialized');
+} else {
+    console.error('Firebase is not initialized');
+}
+
+// Log the firebaseConfig object
+console.log('Firebase configuration:', firebaseConfig);
